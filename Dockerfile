@@ -1,5 +1,5 @@
 FROM jodogne/orthanc
 
-COPY orthanc.json /etc/orthanc/
-
-CMD ["/usr/sbin/Orthanc", "/etc/orthanc/orthanc.json"]
+RUN rm -f /etc/orthanc/orthanc.json
+COPY orthanc.json /etc/orthanc/orthanc.json
+RUN chmod 644 /etc/orthanc/orthanc.json
