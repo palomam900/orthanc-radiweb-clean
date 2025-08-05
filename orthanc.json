@@ -1,7 +1,10 @@
 {
   "Name": "Radiweb PACS",
-  "AuthenticationEnabled": false,
+  "AuthenticationEnabled": true,
   "DicomAet": "ORTHANC",
   "HttpPort": 8042,
-  "DicomPort": 4242
+  "DicomPort": 4242,
+  "RegisteredUsers": {
+    "orthanc": "orthanc"
+  }
 }
